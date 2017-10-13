@@ -17,7 +17,11 @@ class ViewController: UIViewController {
 
 		
 	}
-
+	@IBAction func unwindFormSkillVC(undwindSegue: UIStoryboardSegue){
+		
+		
+	}
+	
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
