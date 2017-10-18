@@ -125,6 +125,9 @@
                                         <state key="normal" title="BCB Fixuture">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onBcbTapped:" destination="nml-fR-lMz" eventType="touchUpInside" id="KcS-t3-XOI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9p-gM-Van" customClass="BorderButton" customModule="league_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="88" width="375" height="63"/>
@@ -137,6 +140,9 @@
                                         <state key="normal" title="ICB Fixuture">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onIcbTapped:" destination="nml-fR-lMz" eventType="touchUpInside" id="sy2-fo-wQ8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wX4-kZ-SHq" customClass="BorderButton" customModule="league_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="176" width="375" height="63"/>
@@ -149,6 +155,9 @@
                                         <state key="normal" title="BPL Fixuture">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onBplTapped:" destination="nml-fR-lMz" eventType="touchUpInside" id="4ry-O7-FYJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -169,7 +178,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHT-th-LOW" customClass="BorderButton" customModule="league_app" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHT-th-LOW" customClass="BorderButton" customModule="league_app" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="584" width="375" height="63"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.39297945210000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -222,6 +231,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="AHT-th-LOW" id="FEf-2x-fvc"/>
                         <segue destination="mFH-li-O2n" kind="show" identifier="skillVCSegue" id="2W2-Ai-yDe"/>
                     </connections>
                 </viewController>
